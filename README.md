@@ -5,7 +5,7 @@ Urban Planning and Development are made easier by using price predictions to und
 
 <hr>
 I've built a regression model to predict real-estate property prices based on bedrooms, bathrooms, acre lot size, street, city, state, and house size.
-3 regression models were trained and tested to find the best one out of all, to measure this I utilized the mean absolute error and the R Squared Score.
+I trained 3 regression models and tested them to find the best one out of all, to measure this I utilized the mean absolute error and the R Squared Score.
 
 ## Visualization & Preprocessing
 Firstly, I removed all rows with null values. Then I encoded the city and state columns as they are strings. Now I checked how the average prices in each state vary, with this graph I was able to notice the trend between states and some states proved to be outliers. All states with less than
