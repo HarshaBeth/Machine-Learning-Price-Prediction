@@ -1,10 +1,13 @@
 # Predict real estate price
+
+### Impact
+Urban Planning and Development are made easier by using price predictions to understand housing demand and plan infrastructure development accordingly. It helps address housing shortages, identify new development areas, and manage urban growth. Using price prediction insights, governments can also benefit by formulating housing policies. Lastly, financial lenders can easily assess the risk associated with real estate investments. The price prediction insights assist lenders in determining their loan terms, interest rates, etc.
+
+<hr>
 I've built a regression model to predict real-estate property prices based on bedrooms, bathrooms, acre lot size, street, city, state, and house size.
 3 regression models were trained and tested to find the best one out of all, to measure this I utilized the mean absolute error and the R Squared Score.
-<hr>
 
-
-# Visualization & Preprocessing
+## Visualization & Preprocessing
 Firstly, I removed all rows with null values. Then I checked how the average prices in each state vary, with this graph I was able to notice the trend between states and some states proved to be outliers. All states with less than
 a 1,000 count in the dataset are removed, such as Guam, Virgin Islands, and Alaska.
 ![vis1](https://github.com/HarshaBeth/Machine-Learning-Price-Prediction/blob/main/vis/vis1.png)
@@ -25,7 +28,7 @@ Further stages of pre-processing our data include finding and deleting the dupli
 
 <br>
 
-# Training and Testing Regression Models
+## Training and Testing Regression Models
 I trained a Decision Tree Regressor before the pre-processing and got a R-squared score of only 11%. After the pre-processing steps, it increased to 23% with a "mean absolute error" of around 205,000. However, this is not enough. To further enhance this model I tuned and found the best amount of leaf nodes to be 25,000. This reduced our MAE by 10,000 more.
 
 However, I believe other models have a possibility of giving a more accurate prediction.
